@@ -1,0 +1,45 @@
+stages:
+  - linting
+
+.linting: &linting
+  stage: linting
+  tags:
+    - docker-privileged
+  image: python:3.9-bullseye
+  before_script:
+    - export
+    - python -V
+    - pip --version
+    - pip install virtualenv
+    - virtualenv .venv
+    - source .venv/bin/activate
+  except:
+    - schedules
+
+codespell:
+  <<: *linting
+  script:
+    - pip install -r requirements.txt
+    - codespell -q 3 -f *
+
+flakehell:
+  <<: *linting
+  script:
+    - pip install -r requirements.txt
+    - python -m flakeheaven lint
+
+
+black:
+  <<: *linting
+  script:
+    - pip install -r requirements.txt
+    - black --check --fast .
+
+isort:
+  <<: *linting
+  script:
+    - pip install -r requirements.txt
+    - isort --check .
+
+
+

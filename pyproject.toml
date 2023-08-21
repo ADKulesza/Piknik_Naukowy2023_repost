@@ -1,0 +1,29 @@
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+    | \.git          # Z katalogu głównego
+    | \.tox
+    | \.venv
+  )/
+)
+'''
+
+
+[tool.flakeheaven]
+exclude = [
+  ".tox",
+  ".git",
+  ".venv",
+]
+format = "grouped"
+max_line_length = 100
+show_source = true
+strictness = "short"
+docstring_style = "sphinx"
+extended_default_ignore=[]
+

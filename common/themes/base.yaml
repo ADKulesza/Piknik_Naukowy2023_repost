@@ -1,0 +1,10 @@
+---
+
+
+# font
+font_name: 'joystix monospace.otf'
+font_size: 26
+
+# color
+primary_color: [ 255, 255, 255 ]
+secondary_color: [ 0, 0, 0 ]

@@ -1,0 +1,14 @@
+,duration,text,stage
+0,3,"Gotowy?",0
+1,2,"Rozluźnij rękę",0
+2,5,"Rozluźnij rękę.DOBRZE CI IDZIE!",1
+3,1,"Rozluźnij rękę.SUPER!",0
+4,2,"Zaciśnij lekko rękę",0
+5,5,"Zaciśnij lekko rękę.TAK TRZYMAJ!",2
+6,1,"Zaciśnij lekko rękę.SUPER!",0
+7,2,"Zaciśnij mocno rękę",0
+8,5,"Zaciśnij mocno rękę.TAK TRZYMAJ!",3
+9,1,"Zaciśnij mocno rękę.SUPER!",0
+10,2,Rozluźnij rękę,0
+11,3,Koniec kalibracji.Dziękujemy,0
+12,5,Kalibracja nie powiodła się.Musimy powtórzyć procedurę,-1
